@@ -1,5 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #2052EB;
+  --bs-secondary: #3F495E;
+  --bs-success: #3AB982;
+  --bs-info: #0dcaf0;
+  --bs-warning: #DEA100;
+  --bs-danger: #F05454;
+  --bs-light: #F4F7FE;
+  --bs-dark: #222222;
+  --bs-gray: #A3ACB5;
+  --bs-primary-100: #d2dcfb;
+  --bs-primary-200: #a6baf7;
+  --bs-primary-300: #7997f3;
+  --bs-primary-400: #4d75ef;
+  --bs-primary-500: #2052EB;
+  --bs-primary-600: #1a42bc;
+  --bs-primary-700: #13318d;
+  --bs-primary-800: #0d215e;
+  --bs-primary-900: #06102f;
+  --bs-secondary-100: #EEEFF3;
+  --bs-secondary-200: #b2b6bf;
+  --bs-secondary-300: #8c929e;
+  --bs-secondary-400: #656d7e;
+  --bs-secondary-500: #3F495E;
+  --bs-secondary-600: #323a4b;
+  --bs-secondary-700: #262c38;
+  --bs-secondary-800: #191d26;
+  --bs-secondary-900: #0d0f13;
+  --bs-success-100: #d8f1e6;
+  --bs-success-200: #b0e3cd;
+  --bs-success-300: #89d5b4;
+  --bs-success-400: #61c79b;
+  --bs-success-500: #3AB982;
+  --bs-success-600: #2e9468;
+  --bs-success-700: #236f4e;
+  --bs-success-800: #174a34;
+  --bs-success-900: #0c251a;
+  --bs-warning-100: #f8eccc;
+  --bs-warning-200: #f2d999;
+  --bs-warning-300: #ebc766;
+  --bs-warning-400: #e5b433;
+  --bs-warning-500: #DEA100;
+  --bs-warning-600: #b28100;
+  --bs-warning-700: #856100;
+  --bs-warning-800: #594000;
+  --bs-warning-900: #2c2000;
+  --bs-danger-100: #fcdddd;
+  --bs-danger-200: #f9bbbb;
+  --bs-danger-300: #f69898;
+  --bs-danger-400: #f37676;
+  --bs-danger-500: #F05454;
+  --bs-danger-600: #c04343;
+  --bs-danger-700: #903232;
+  --bs-danger-800: #602222;
+  --bs-danger-900: #301111;
+  --bs-gray-100: #F4F7FE;
+  --bs-gray-200: #E6E9ED;
+  --bs-gray-300: #D9DEE3;
+  --bs-gray-400: #C7CED5;
+  --bs-gray-500: #A3ACB5;
+  --bs-gray-600: #616972;
+  --bs-gray-700: #3F464D;
+  --bs-gray-800: #2D3238;
+  --bs-gray-900: #222222;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
 *, 
 *::before, 
 *::after {
@@ -11,4 +90,12 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  /* overflow: hidden; */
 }
+
+/* Navbar */
+nav.navbar {
+  background-color: var(--bs-primary-100);
+}
+
+/* end Navbar */

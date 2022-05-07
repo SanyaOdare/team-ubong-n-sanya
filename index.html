@@ -4,19 +4,363 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon and Touch Icons-->
+  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="src/assets/img/favicons/favicon-16x16.png">
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./src/assets/css/style.css">
   <title>Kithub - Landing page Template + UI Kit</title>
 </head>
 <body>
   <!-- Navbar -->
+  <header class="course-header bg-no-repeat mb-0 mb-lg-60px">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent pt-3 pt-lg-40px">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img width="106" src="src/assets/img/kithub-logo.svg" alt="">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav hovered-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown px-20px px-lg-0 pb-2 pt-3 py-lg-0">
+              <a class="nav-link dropdown-toggle active" aria-current="page" href="#" id="landingPages" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Landings
+              </a>
+              <div class="dropdown-menu mega-menu dropdown-menu-lg px-0 px-lg-1 py-0 py-lg-2 shadow-lg" aria-labelledby="landingPages">
+                <div class="row gx-0 gx-lg-2 mx-0 align-items-center">
+                  <div class="col-5 d-none d-lg-inline-block">
+                    <figure class="mb-0">
+                      <img class="w-100" src="src/assets/img/explore.jpg" alt="">
+                    </figure>
+                  </div>
+                  <!-- end col -->
+
+                  <div class="col-12 col-lg-7">
+                    <div class="row gx-0 gx-lg-3 ms-0 ms-lg-10px">
+                      <div class="col-12 col-lg">
+                        <a class="dropdown-item mb-10px active" aria-current="page" href="./index.html">Single Course</a>
+                        <a class="dropdown-item mb-10px" href="#s">Creative Agency</a>
+                        <a class="dropdown-item mb-10px" href="#s">Coworking</a>
+                        <a class="dropdown-item mb-10px mb-lg-0" href="#s">SaaS</a>
+                      </div>
+                      <!-- end col -->
+
+                      <div class="col-12 col-lg">
+                        <a class="dropdown-item mb-10px" href="./landing-marketing.html">Marketing</a>
+                        <a class="dropdown-item mb-10px" href="./landing-portfolio.html">Portfolio</a>
+                        <a class="dropdown-item mb-10px mb-lg-0" href="./landing-event.html">Event</a>
+                      </div>
+                      <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                  </div>
+                  <!-- end col -->
+                </div>
+                <!--end row -->
+              </div>
+              <!-- end dropdown-menu -->
+            </li>
+            <!-- end nav-item -->
+
+            <li class="nav-item dropdown px-20px px-lg-0 py-2 py-lg-0">
+              <a class="nav-link dropdown-toggle" href="#" id="allPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <div class="dropdown-menu mega-menu dropdown-menu-xl shadow-lg px-0 px-lg-30px py-0 py-lg-25px" aria-labelledby="allPages">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-md">
+                    <h6 class="dropdown-header mt-1 mt-lg-0 mb-10px">Company</h6>
+                    <a class="dropdown-item mb-10px" href="./pages/about-us.html">About Us</a>
+                    <a class="dropdown-item mb-10px" href="./pages/pricing.html">Pricing</a>
+                    <a class="dropdown-item mb-10px" href="./pages/contact.html">Contact</a>
+                    <a class="dropdown-item mb-10px" href="./pages/help-center.html">Help Centre</a>
+                    <a class="dropdown-item mb-10px" href="./pages/terms.html">Terms</a>
+                    <a class="dropdown-item mb-10px" href="./pages/faq.html">FAQ</a>
+                  </div>
+                  <!-- end col -->
+
+                  <div class="col-12 col-sm-6 col-md">
+                    <h6 class="dropdown-header mt-1 mt-lg-0 mb-10px">Career</h6>
+                    <a class="dropdown-item mb-10px" href="./pages/career.html">Opening Jobs</a>
+                    <a class="dropdown-item mb-10px" href="./pages/job-details.html">Job details</a>
+                    
+                    <h6 class="dropdown-header mt-1 mt-lg-3 mb-10px">Blog</h6>
+                    <a class="dropdown-item mb-10px" href="./pages/blog.html">Grid</a>
+                    <a class="dropdown-item mb-10px" href="./pages/blog-details.html">Details</a>
+                    <a class="dropdown-item mb-10px" href="./pages/blog-search-results.html">Search Result</a>
+                  </div>
+                  <!-- end col -->
+
+                  <div class="col-12 col-sm-6 col-md">
+                    <h6 class="dropdown-header mt-1 mt-lg-0 mb-10px">Portfolio</h6>
+                    <a class="dropdown-item mb-10px" href="./pages/portfolio.html">Grid</a>
+                    <a class="dropdown-item mb-10px" href="./pages/portfolio-masonry.html">Masonry</a>
+                    <a class="dropdown-item mb-10px" href="./pages/case-study.html">Case study</a>
+                  </div>
+                  <!-- end col -->
+
+                  <div class="col-12 col-sm-6 col-md">
+                    <h6 class="dropdown-header mt-1 mt-lg-0 mb-10px">Other Pages</h6>
+                    <a class="dropdown-item mb-10px" href="./pages/error-404.html">Error 404</a>
+                    <a class="dropdown-item mb-10px" href="./pages/error-500.html">Error 500</a>
+                  </div>
+                  <!-- end col -->
+                </div>
+                <!--end row -->
+              </div>
+              <!-- end dropdown-menu -->
+            </li>
+            <!-- end nav-item -->
+
+            <li class="nav-item dropdown px-20px px-lg-0 py-2 py-lg-0">
+              <a class="nav-link dropdown-toggle" href="#" id="accountPages" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </a>
+              <ul class="dropdown-menu shadow-lg px-0 px-lg-2 py-0 py-lg-2" aria-labelledby="accountPages">
+                <li>
+                  <a class="dropdown-item mb-10px mb-lg-0" href="./pages/login.html">Login</a>
+                </li>
+                <li>
+                  <a class="dropdown-item mb-10px mb-lg-0" href="./pages/register.html">Register</a>
+                </li>
+                <li>
+                  <a class="dropdown-item mb-10px mb-lg-0" href="./pages/reset-password.html">Reset Password</a>
+                </li>
+              </ul><!--end dropdown-menu -->
+            </li><!-- end nav-item -->
+
+            <li class="nav-item dropdown px-20px px-lg-0 py-2 py-lg-0">
+              <a class="nav-link dropdown-toggle" href="#" id="documentation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Documentation
+              </a>
+              <div class="dropdown-menu dropdown-menu-md shadow-lg px-0 px-lg-20px py-0 py-lg-3" aria-labelledby="documentation">
+                <a href="./docs/index.html" class="dropdown-item group-item d-flex align-items-center mb-10px mb-lg-0">
+                  <img width="26" src="./assets/SVG-icons/noun_code_document.svg" alt="">
+                  
+                  <div class="ms-3 flex-grow-1">
+                    <h6 class="dropdown-header fw-medium lh-base p-0">Documentation</h6>
+                    <p class="text-gray-600 lh-2 mb-0">Developer Guides</p>
+                  </div>
+                  <div class="hover-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="5.481" height="8.841" viewBox="0 0 5.481 8.841">
+                      <path d="M-4406.182-5710.5l3.891,3.89,3.89-3.89" transform="translate(5711.03 -4397.871) rotate(-90)" fill="none" stroke="#2052eb" stroke-width="1.5"></path>
+                    </svg>                        
+                  </div>
+                </a>
+
+                <a href="./docs/alerts.html" class="dropdown-item group-item d-flex align-items-center mb-10px mb-lg-0">
+                  <img width="26" src="./assets/SVG-icons/noun_document.svg" alt="">
+                  
+                  <div class="ms-3 flex-grow-1">
+                    <h6 class="dropdown-header fw-medium lh-base p-0">Components</h6>
+                    <p class="text-gray-600 lh-2 mb-0">List of components</p>
+                  </div>
+                  <div class="hover-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="5.481" height="8.841" viewBox="0 0 5.481 8.841">
+                      <path d="M-4406.182-5710.5l3.891,3.89,3.89-3.89" transform="translate(5711.03 -4397.871) rotate(-90)" fill="none" stroke="#2052eb" stroke-width="1.5"></path>
+                    </svg>                        
+                  </div>
+                </a>
+              </div>
+              <!--end dropdown-menu -->
+            </li>
+            <!-- end nav-item -->
+          </ul>
+          <!-- end navbar-nav -->
+          
+          <div class="d-grid d-lg-flex px-20px px-lg-0 pt-10px pb-20px py-lg-0">
+            <a class="btn btn-primary btn-shadow-primary-100" href="https://wrapbootstrap.com/theme/kithub-landing-page-template-ui-kit-WB083N5M0">Buy Now</a>
+          </div>
+        </div>
+        <!-- end collapse -->
+      </div>
+      <!-- end container -->
+    </nav>
+
+    <!--Welcome-->
+    <section class="py-25px pt-md-35px pb-md-60px py-lg-60px">
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-between align-items-lg-center">
+          <div class="col-10 col-md-8 col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 fw-bold mb-3 mb-md-25px">Start your <span class="text-primary">VUE </span>Course with pro.</h1>
+            <h6 class="fw-bold mb-1 d-none d-lg-block">By Alexander Johnson</h6>
+            <h5 class="fw-normal text-gray-600 mb-0">Author &amp; Senior Software Developer at GitLab</h5>
+            <div class="row mt-4 mt-md-40px">
+              <div class="col-12">
+                <a target="_blank" class="btn btn-primary btn-shadow-primary-100" href="https://bikeguy.net">Start 7 day free</a>
+                <a class="btn btn-link link-gray-600 d-inline-flex align-items-center text-decoration-none" data-fancybox="introdaction" href="https://www.youtube.com/watch?v=OrxmtDw4pVI"> 
+                  <span class="badge badge-lg badge-rounded-circle bg-primary-100 text-primary me-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  </span>
+                  Who am I
+                </a>
+              </div><!-- end col -->
+
+              <div class="col-12 position-relative">
+                <img class="position-absolute d-none d-lg-inline-block" style="top: 30px;" src="./assets/img/long-arrow-pointer.svg" alt="">
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end col -->
+
+          <div class="col-10 col-md-6 col-lg-4 position-relative mt-60px mt-lg-0">
+            <img class="w-100" src="src/assets/img/vue_01.png" alt="">
+            <div class="card couse-card-1 shadow aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-body px-3 py-20px">
+                <div class="d-flex align-items-center">
+                  <div class="flex-grow-1">
+                    <h6 class="fw-normal text-gray-700 mb-0">Time to complete</h6>
+                    <h5 class="fw-bold text-primary mb-0">25 Hours</h5>
+                  </div>
+                  <div class="mt-2"><span class="material-icons fs-1 text-primary">alarm</span></div>
+                </div>
+              </div><!-- end card-body -->
+            </div><!-- end card -->
+
+            <div class="card couse-card-2 shadow aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body px-3 py-20px">
+                <div class="d-flex align-items-center">
+                  <div class="flex-grow-1">
+                    <h6 class="fw-normal text-gray-700 mb-0">Employed</h6>
+                    <h5 class="fw-bold text-primary mb-0">1200</h5>
+                  </div>
+                  <div>
+                    <span class="material-icons display-6 text-primary">check_circle_outline</span>
+                  </div>
+                </div>
+              </div><!-- end card-body -->
+            </div><!-- end card -->
+
+            <div class="card couse-card-3 shadow aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-body px-3 py-20px">
+                <div class="d-flex align-items-center">
+                  <div class="flex-grow-1">
+                    <h1 class="fw-normal text-gray-700">Happy Students</h1>
+                    <h1 class="fw-bold text-primary mb-0">1245</h1>
+                  </div>
+                  <div class="mt-2"><span class="material-icons display-4 text-primary">sentiment_satisfied_alt</span></div>
+                </div>
+              </div><!-- end card-body -->
+            </div><!-- end card -->
+          </div><!-- end col -->
+        </div><!-- end row -->
+      </div><!-- end container-lg -->
+    </section>
+  </header>
 
   <!-- Welcome -->
 
   <!-- Feature quotes section -->
 
-  <!-- course overview section -->
+  <!-- Course Overview Section -->
+  <section class="bg-white pb-25px pb-md-60px pt-25px pt-md-40px">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card shadow mb-4 mb-lg-0">
+            <div class="card-body">
+              <span class="badge d-inline-block bg-primary-100 text-primary-400 text-uppercase mb-35px">Featured comment</span>
+              <figure class="mb-0">
+                <blockquote class="blockquote blockquote-sm mb-35px">
+                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy</p>
+                </blockquote>
+                <figcaption class="d-flex align-items-center">
+                  <div class="avatar me-10px">
+                    <img class="avatar-img rounded-circle" src="./src/assets/img/avatar_01.png" alt="avatar">
+                  </div>
+                  <div>
+                    <h6 class="fw-medium mb-2 lh-1">Alban James</h6>
+                    <p class="text-secondary-400 fs-7 mb-0 lh-1">Junior Developer</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div><!-- end card-body -->
+          </div><!-- end card -->
+        </div><!-- end col -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card shadow mb-4 mb-lg-0">
+            <div class="card-body">
+              <span class="badge d-inline-block bg-success-100 text-success-400 text-uppercase mb-35px">Featured comment</span>
+              <figure class="mb-0">
+                <blockquote class="blockquote blockquote-sm mb-35px">
+                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy</p>
+                </blockquote>
+                <figcaption class="d-flex align-items-center">
+                  <div class="avatar me-10px">
+                    <img class="avatar-img rounded-circle" src="./src/assets/img/avatar_05.png" alt="avatar">
+                  </div>
+                  <div>
+                    <h6 class="fw-medium mb-2 lh-1">John Doe</h6>
+                    <p class="text-secondary-400 fs-7 mb-0 lh-1">Junior Developer</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div><!-- end card-body -->
+          </div><!-- end card -->
+        </div><!-- end col -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card shadow mb-4 mb-md-0 mb-lg-0">
+            <div class="card-body">
+              <span class="badge d-inline-block bg-danger-100 text-danger-400 text-uppercase mb-35px">Featured comment</span>
+              <figure class="mb-0">
+                <blockquote class="blockquote blockquote-sm mb-35px">
+                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy</p>
+                </blockquote>
+                <figcaption class="d-flex align-items-center">
+                  <div class="avatar me-10px">
+                    <img class="avatar-img rounded-circle" src="./src/assets/img/avatar_06.png" alt="avatar">
+                  </div>
+                  <div>
+                    <h6 class="fw-medium mb-2 lh-1">Andy Mio</h6>
+                    <p class="text-secondary-400 fs-7 mb-0 lh-1">Junior Developer</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div><!-- end card-body  -->
+          </div><!-- end card -->
+        </div><!-- end col -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card shadow mb-0 mb-lg-0">
+            <div class="card-body">
+              <span class="badge d-inline-block bg-warning-100 text-warning-400 text-uppercase mb-35px">Featured comment</span>
+              <figure class="mb-0">
+                <blockquote class="blockquote blockquote-sm mb-35px">
+                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy</p>
+                </blockquote>
+                <figcaption class="d-flex align-items-center">
+                  <div class="avatar me-10px">
+                    <img class="avatar-img rounded-circle" src="./src/assets/img/avatar_04.png" alt="avatar">
+                  </div>
+                  <div>
+                    <h6 class="fw-medium mb-2 lh-1">Arina Juos</h6>
+                    <p class="text-secondary-400 fs-7 mb-0 lh-1">Junior Developer</p>
+                  </div>
+                </figcaption>
+              </figure>
+            </div><!-- end card-body -->
+          </div><!-- end card -->
+        </div><!-- end col -->
+      </div><!-- end row -->
+    </div><!-- end container -->
+  </section>
 
   <!-- Quotes section -->
 
