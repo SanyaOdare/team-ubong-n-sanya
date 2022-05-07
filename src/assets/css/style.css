@@ -90,12 +90,60 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-image: #F4F7FE;
   /* overflow: hidden; */
 }
 
 /* Navbar */
 nav.navbar {
-  background-color: var(--bs-primary-100);
+  /* background-color: var(--bs-primary-100); */
 }
 
 /* end Navbar */
+
+/* Button */
+.btn-shadow-primary-100 {
+  box-shadow: 0px 3px 8px #d2dcfb;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2052EB;
+  border-color: #2052EB;
+}
+
+/*  */
+section {
+  display: block;
+}
+/*  */
+
+/* Feature quotes section */
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem 1.25rem;
+}
+
+span.badge-1 {
+  background-image: var(--bs-primary-100);
+}
+
+.blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.avatar-img {
+  width: 54px;
+}
+
+@media (min-width: 768px) {
+  .pb-md-60px {
+    padding-bottom: 60px !important;
+  }
+}

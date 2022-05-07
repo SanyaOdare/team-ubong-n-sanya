@@ -7,6 +7,8 @@
   <!-- Favicon and Touch Icons-->
   <link rel="icon" type="image/png" sizes="32x32" href="src/assets/img/favicons/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="16x16" href="src/assets/img/favicons/favicon-16x16.png">
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -14,17 +16,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./src/assets/css/style.css">
   <title>Kithub - Landing page Template + UI Kit</title>
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Header -->
   <header class="course-header bg-no-repeat mb-0 mb-lg-60px">
-    <!--Navbar-->
+    <!--Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent pt-3 pt-lg-40px">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img width="106" src="src/assets/img/kithub-logo.svg" alt="">
+          <img width="106" src="./src/assets/img/kithub-logo.svg" alt="">
         </a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
@@ -43,7 +47,7 @@
                 <div class="row gx-0 gx-lg-2 mx-0 align-items-center">
                   <div class="col-5 d-none d-lg-inline-block">
                     <figure class="mb-0">
-                      <img class="w-100" src="src/assets/img/explore.jpg" alt="">
+                      <img class="w-100" src="./src/assets/img/explore.jpg" alt="">
                     </figure>
                   </div>
                   <!-- end col -->
@@ -59,9 +63,9 @@
                       <!-- end col -->
 
                       <div class="col-12 col-lg">
-                        <a class="dropdown-item mb-10px" href="./landing-marketing.html">Marketing</a>
-                        <a class="dropdown-item mb-10px" href="./landing-portfolio.html">Portfolio</a>
-                        <a class="dropdown-item mb-10px mb-lg-0" href="./landing-event.html">Event</a>
+                        <a class="dropdown-item mb-10px" href="#s">Marketing</a>
+                        <a class="dropdown-item mb-10px" href="#s">Portfolio</a>
+                        <a class="dropdown-item mb-10px mb-lg-0" href="#s">Event</a>
                       </div>
                       <!-- end col -->
                     </div>
@@ -139,8 +143,10 @@
                 <li>
                   <a class="dropdown-item mb-10px mb-lg-0" href="./pages/reset-password.html">Reset Password</a>
                 </li>
-              </ul><!--end dropdown-menu -->
-            </li><!-- end nav-item -->
+              </ul>
+              <!--end dropdown-menu -->
+            </li>
+            <!-- end nav-item -->
 
             <li class="nav-item dropdown px-20px px-lg-0 py-2 py-lg-0">
               <a class="nav-link dropdown-toggle" href="#" id="documentation" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -200,7 +206,7 @@
             <h5 class="fw-normal text-gray-600 mb-0">Author &amp; Senior Software Developer at GitLab</h5>
             <div class="row mt-4 mt-md-40px">
               <div class="col-12">
-                <a target="_blank" class="btn btn-primary btn-shadow-primary-100" href="https://bikeguy.net">Start 7 day free</a>
+                <a target="_blank" class="btn btn-primary btn-shadow-primary-100" href="#s">Start 7 day free</a>
                 <a class="btn btn-link link-gray-600 d-inline-flex align-items-center text-decoration-none" data-fancybox="introdaction" href="https://www.youtube.com/watch?v=OrxmtDw4pVI"> 
                   <span class="badge badge-lg badge-rounded-circle bg-primary-100 text-primary me-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
@@ -261,23 +267,19 @@
         </div><!-- end row -->
       </div><!-- end container-lg -->
     </section>
-  </header>
+  </header>  
 
-  <!-- Welcome -->
-
-  <!-- Feature quotes section -->
-
-  <!-- Course Overview Section -->
+  <!-- Feature quotes section -->  
   <section class="bg-white pb-25px pb-md-60px pt-25px pt-md-40px">
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-3">
           <div class="card shadow mb-4 mb-lg-0">
             <div class="card-body">
-              <span class="badge d-inline-block bg-primary-100 text-primary-400 text-uppercase mb-35px">Featured comment</span>
+              <span class="badge badge-1 d-inline-block bg-primary-100 text-primary-400 text-uppercase mb-35px">Featured comment</span>
               <figure class="mb-0">
                 <blockquote class="blockquote blockquote-sm mb-35px">
-                  <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy</p>
+                  <p class="fs-10">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy</p>
                 </blockquote>
                 <figcaption class="d-flex align-items-center">
                   <div class="avatar me-10px">
@@ -360,6 +362,95 @@
         </div><!-- end col -->
       </div><!-- end row -->
     </div><!-- end container -->
+  </section>
+
+  <!-- Course Overview Section -->
+  <section class="bg-white py-25px py-md-60px">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col-10">
+              <h2 class="fw-extra-bold mb-3">What’s inside?</h2>
+              <p>Course is created in 4 important module that you will go through, watch the video course presentation for more.</p>
+            </div><!-- end col -->
+          </div><!-- end row -->
+          <figure class="mb-0 mt-3 rounded overlay gradient-primary mb-30px mb-lg-0">
+            <img class="img-fluid" src="src/assets/img/video_screenshot.jpg" alt="">
+            <a class="position-absolute top-50 start-50 translate-middle" data-fancybox="course" href="https://www.youtube.com/watch?v=OrxmtDw4pVI" style="z-index: 1">
+              <img src="src/assets/img/play-circle.svg" alt="play button">
+            </a>
+          </figure>
+        </div><!-- end col -->
+
+        <div class="col-12 col-lg-6">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="card mb-4">
+                <div class="card-body py-35px bg-primary rounded">
+                  <div class="card-icon mb-25px position-relative">
+                    <span class="d-inline-block position-relative">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle text-white display-6"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                    </span>
+                    <span class="icon-bg bg-primary-400 d-inline-block"></span>
+                  </div><!-- end card-icon -->
+                  <h6 class="fw-semi-bold text-white mb-10px">Introduction to VUE</h6>
+                  <p class="fs-7 text-white mb-0">Learn how to make front-end web apps with ease using Vue.js</p>
+                </div><!-- end card-body -->
+              </div><!-- end card -->
+            </div><!-- end col -->
+
+            <div class="col-12 col-md-6">
+              <div class="card mb-4 shadow">
+                <div class="card-body py-35px rounded">
+                  <div class="card-icon mb-25px position-relative">
+                    <span class="d-inline-block position-relative">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text text-dark display-6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    </span>
+                    <span class="icon-bg bg-primary-100 d-inline-block"></span>
+                  </div><!-- end card-icon -->
+                  <h6 class="fw-semi-bold text-dark mb-10px">VUE Data</h6>
+                  <p class="fs-7 mb-0">Learn how to make front-end web apps with ease using Vue.js</p>
+                </div><!-- end card-body -->
+              </div><!-- end card -->
+            </div><!-- end col -->
+
+            <div class="col-12 col-md-6">
+              <div class="card shadow">
+                <div class="card-body py-35px rounded">
+                  <div class="card-icon mb-25px position-relative">
+                    <span class="d-inline-block position-relative">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code text-dark display-6"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </span>
+                    <span class="icon-bg bg-primary-100 d-inline-block"></span>
+                  </div><!-- end card-icon -->
+                  <h6 class="fw-semi-bold text-dark mb-10px">VUE Forms</h6>
+                  <p class="fs-7 mb-0">Learn how to make front-end web apps with ease using Vue.js</p>
+                </div>
+                <!-- end card-body -->
+              </div>
+              <!-- end card -->
+            </div>
+            <!-- end col -->
+
+            <div class="col-12 col-md-6">
+              <div class="card shadow">
+                <div class="card-body py-35px rounded">
+                  <div class="card-icon mb-25px position-relative"><span class="d-inline-block position-relative"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid text-dark display-6"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></span><span class="icon-bg bg-primary-100 d-inline-block"></span></div>
+                  <h6 class="fw-semi-bold text-dark mb-10px">Styling Elements with VUE</h6>
+                  <p class="fs-7 mb-0">Learn how to make front-end web apps with ease using Vue.js</p>
+                </div>
+              </div>
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end col -->
+      </div>
+      <!-- end row -->
+    </div>
+    <!-- end container -->
   </section>
 
   <!-- Quotes section -->
