@@ -1,0 +1,99 @@
+.section5{
+    background-color: #fff !important;
+}
+.rounded {
+    border-radius: 0.188rem !important;
+}
+.bg-gray-100 {
+    background-color: #F4F7FE !important;
+}
+.py-30px {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+.px-30px {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.fw-bolder {
+    font-weight: 800 !important;
+}
+.mb-30px {
+    margin-bottom: 30px !important;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.list-unstyled > li{
+    margin-left: 4px;
+}
+.badge-rounded-circle {
+    border-radius: 50%;
+    padding: 0;
+    width: 1.875rem;
+    height: 1.875rem;
+    line-height: 1.875rem;
+}
+.bg-primary-100 {
+    background-color: #d2dcfb !important;
+}
+.me-10px {
+    margin-right: 10px !important;
+}
+.mb-20px {
+    margin-bottom: 20px !important;
+}
+.fa-check{
+    color: #2B5AEC;
+}
+.badge {
+    display: inline-block;
+    padding: 0.563rem 0.688rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 50%;
+}
+.bg-white {
+    background-color: #fff !important;
+}
+.mt-40px {
+    margin-top: 40px !important;
+}
+.border-4 {
+    border-width: 4px !important;
+}
+.me-20px {
+    margin-right: 20px !important;
+}
+.py-30px {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+.px-25px {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+}
+.fw-bold {
+    font-weight: 700 !important;
+}
+.mb-5px {
+    margin-bottom: 5px !important;
+}
+.border{
+    max-width: 552px;
+}
+@media (min-width: 992px){
+.col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.33333%;
+}
+}
