@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon and Touch Icons-->
-  <link rel="icon" type="image/png" sizes="32x32" href="src/assets/img/favicons/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="src/assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/img/favicons/favicon-16x16.png">
   <!-- Material Icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Bootstrap -->
@@ -154,11 +154,11 @@
               </a>
               <div class="dropdown-menu dropdown-menu-md shadow-lg px-0 px-lg-20px py-0 py-lg-3" aria-labelledby="documentation">
                 <a href="./docs/index.html" class="dropdown-item group-item d-flex align-items-center mb-10px mb-lg-0">
-                  <img width="26" src="./assets/SVG-icons/noun_code_document.svg" alt="">
+                  <img width="26" src="./src/assets/img/noun_code_document.svg" alt="">
                   
                   <div class="ms-3 flex-grow-1">
                     <h6 class="dropdown-header fw-medium lh-base p-0">Documentation</h6>
-                    <p class="text-gray-600 lh-2 mb-0">Developer Guides</p>
+                    <p class="text-gray-600 -2 mb-0">Developer Guides</p>
                   </div>
                   <div class="hover-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="5.481" height="8.841" viewBox="0 0 5.481 8.841">
@@ -168,7 +168,7 @@
                 </a>
 
                 <a href="./docs/alerts.html" class="dropdown-item group-item d-flex align-items-center mb-10px mb-lg-0">
-                  <img width="26" src="./assets/SVG-icons/noun_document.svg" alt="">
+                  <img width="26" src="./src/assets/img/noun_document.svg" alt="">
                   
                   <div class="ms-3 flex-grow-1">
                     <h6 class="dropdown-header fw-medium lh-base p-0">Components</h6>
@@ -197,7 +197,7 @@
     </nav>
 
     <!--Welcome-->
-    <section class="py-25px pt-md-35px pb-md-60px py-lg-60px">
+    <section class="py-25px welcome pt-md-35px pb-md-60px py-lg-60px">
       <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-lg-center">
           <div class="col-10 col-md-8 col-lg-6 text-center text-lg-start">
@@ -207,16 +207,17 @@
             <div class="row mt-4 mt-md-40px">
               <div class="col-12">
                 <a target="_blank" class="btn btn-primary btn-shadow-primary-100" href="#s">Start 7 day free</a>
-                <a class="btn btn-link link-gray-600 d-inline-flex align-items-center text-decoration-none" data-fancybox="introdaction" href="https://www.youtube.com/watch?v=OrxmtDw4pVI"> 
+                <a class="btn btn-link link-gray-600 d-inline-flex align-items-center text-decoration-none" data-fancybox="introduction" href="https://www.youtube.com/watch?v=OrxmtDw4pVI"> 
                   <span class="badge badge-lg badge-rounded-circle bg-primary-100 text-primary me-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
                   </span>
                   Who am I
                 </a>
-              </div><!-- end col -->
+              </div>
+              <!-- end col -->
 
               <div class="col-12 position-relative">
-                <img class="position-absolute d-none d-lg-inline-block" style="top: 30px;" src="./assets/img/long-arrow-pointer.svg" alt="">
+                <img class="position-absolute d-none d-lg-inline-block" style="top: 30px;" src="./src/assets/img/long-arrow-pointer.svg" alt="">
               </div>
               <!-- end col -->
             </div>
@@ -225,7 +226,7 @@
           <!-- end col -->
 
           <div class="col-10 col-md-6 col-lg-4 position-relative mt-60px mt-lg-0">
-            <img class="w-100" src="src/assets/img/vue_01.png" alt="">
+            <img class="w-100" src="./src/assets/img/vue_01.png" alt="">
             <div class="card couse-card-1 shadow aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
               <div class="card-body px-3 py-20px">
                 <div class="d-flex align-items-center">
@@ -267,16 +268,18 @@
         </div><!-- end row -->
       </div><!-- end container-lg -->
     </section>
-  </header>  
+  </header>
+
+  <div class="semi-circle"></div>
 
   <!-- Feature quotes section -->  
   <section class="bg-white pb-25px pb-md-60px pt-25px pt-md-40px">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">
+        <div class="col-12 col-md-6 col-lg-3 bg-light">
           <div class="card shadow mb-4 mb-lg-0">
             <div class="card-body">
-              <span class="badge badge-1 d-inline-block bg-primary-100 text-primary-400 text-uppercase mb-35px">Featured comment</span>
+              <span class="badge d-inline-block bg-primary-100 text-primary-400 text-uppercase mb-35px">Featured comment</span>
               <figure class="mb-0">
                 <blockquote class="blockquote blockquote-sm mb-35px">
                   <p class="fs-10">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy</p>
@@ -376,9 +379,9 @@
             </div><!-- end col -->
           </div><!-- end row -->
           <figure class="mb-0 mt-3 rounded overlay gradient-primary mb-30px mb-lg-0">
-            <img class="img-fluid" src="src/assets/img/video_screenshot.jpg" alt="">
+            <img class="img-fluid" src="./src/assets/img/video_screenshot.jpg" alt="">
             <a class="position-absolute top-50 start-50 translate-middle" data-fancybox="course" href="https://www.youtube.com/watch?v=OrxmtDw4pVI" style="z-index: 1">
-              <img src="src/assets/img/play-circle.svg" alt="play button">
+              <img src="./src/assets/img/play-circle.svg" alt="play button">
             </a>
           </figure>
         </div><!-- end col -->
@@ -463,6 +466,9 @@
 
   <!-- Footer -->
 
+  <!-- Swiper -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
